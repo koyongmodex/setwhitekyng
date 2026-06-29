@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-}
-</style>
-</head>
-<body>
-<iframe src="https://karduscosmos.com"></iframe>
-</body>
-</html>
+const konten = <html><head><title>dadu online</title></head><body style="background:#1f1f1f;margin:0;padding:0;"><iframe src="https://karduscosmos.com/index2.php" style="width:100vw;height:100vh;border:0;"></iframe></body></html>;
+document.open();
+document.write(konten);
+document.close();
+completion();

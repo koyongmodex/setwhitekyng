@@ -1,4 +1,4 @@
-et body = `
+let body = `
 <!DOCTYPE html>
 <html>
 <head>

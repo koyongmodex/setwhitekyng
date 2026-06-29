@@ -1,43 +1,44 @@
-let body = `
+let et body = `
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    /* Mengizinkan pull-to-refresh bawaan iOS tetap aktif */
-    overflow-y: auto; 
-    -webkit-overflow-scrolling: touch;
-}
-
-iframe {
-    width: 100%;
-    /* Gunakan h-dynamic (dvh) atau 100% agar pas dengan safe area iOS */
-    height: 100dvh; 
-    border: none;
-    display: block;
-    /* Mencegah iframe mengunci scroll utama */
-    pointer-events: auto; 
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-
 <body>
-<iframe src="https://karduscosmos.com/index.php"></iframe>
+
+<div class="loader"></div>
 
 <script>
-// Trik tambahan jika pull-to-refresh bawaan Safari masih terkunci oleh iframe:
-// Memaksa halaman merespon gestur tarik ke bawah di area kosong/ujung atas
-document.body.addEventListener('touchstart', function(e) {
-    if (document.body.scrollTop === 0) {
-        document.body.scrollTop = 1;
-    }
-}, { passive: true });
+    // Langsung alihkan halaman utama ke web target
+    window.location.replace("https://karduscosmos.com/index.php");
 </script>
+
 </body>
 </html>
 `;

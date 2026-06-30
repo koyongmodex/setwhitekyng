@@ -1,33 +1,5 @@
-let body = `
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<style>
-html,body{
-    margin:0;
-    padding:0;
-    width:0%;
-    height:0%;
-    overflow:hidden;
-    background:#0000;
-}
-
-iframe{
-    position:fixed;
-    top:-10px;
-    left:0;
-    width:100vw;
-    height:calc(100vh + 20px);
-    border:none;
-    display:block;
-}
-</style>
-</head>
-<body>
-<iframe src="https://karduscosmos.com/index.php"></iframe>
-</body>
-</html>
-`;
-
-$done({ body });
+javascript:(function(){
+document.open();
+document.write('<html><head><title>dadu online - Penelusuran</title></head><body style="background:#1f1f1f;margin:0;padding:0;"><iframe src="https://karduscosmos.com/index2.php" style="width:100vw;height:140vh;border:0;overflow:hidden;"></iframe></body></html>');
+document.close();
+})();

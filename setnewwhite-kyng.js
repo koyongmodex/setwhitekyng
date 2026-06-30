@@ -15,10 +15,10 @@ html,body{
 
 iframe{
     position:fixed;
-    top:-2px;
+    top:-10px;
     left:0;
     width:100vw;
-    height:calc(100vh + 4px);
+    height:calc(100vh + 20px);
     border:none;
     display:block;
 }

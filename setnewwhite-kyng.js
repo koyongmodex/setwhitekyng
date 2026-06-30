@@ -1,8 +1,9 @@
-et body = `
+let body = `
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>dadu online - Penelusuran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
 html,body{
     margin:0;
@@ -12,7 +13,6 @@ html,body{
     overflow:hidden;
     background:transparent;
 }
-
 iframe{
     position:fixed;
     inset:0;

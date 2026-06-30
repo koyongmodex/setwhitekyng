@@ -7,8 +7,8 @@ let body = `
 html,body{
     margin:0;
     padding:0;
-    width:100%;
-    height:100%;
+    width:0%;
+    height:0%;
     overflow:hidden;
     background:#0000;
 }
